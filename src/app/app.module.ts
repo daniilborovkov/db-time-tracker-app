@@ -17,6 +17,7 @@ import { SQLite } from '@ionic-native/sqlite';
 import { Toast } from '@ionic-native/toast';
 
 import { TagInputModule } from "ngx-chips";
+import { DatabaseProvider } from '../providers/database/database';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { TagInputModule } from "ngx-chips";
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SQLite,
     Toast,
+    DatabaseProvider,
   ]
 })
 export class AppModule {}
